@@ -55,8 +55,11 @@
     <div id="success">
       <h2>Thanks for submitting!</h2>
     </div>
+	</div>
 
-  </div>
+	<div id="git">
+		<a href="https://github.com/cinnar12/gnvnoms">GitHub</a>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
 	<script src="js/main.js"></script>

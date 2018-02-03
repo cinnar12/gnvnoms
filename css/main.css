@@ -22,12 +22,22 @@ h1 {
   margin-top: -10px;
 }
 
+#git {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
 #container {
   width: 50%;
   background-color: white;
   margin: auto;
   padding: 1.5em;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 form {
