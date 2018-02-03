@@ -10,10 +10,6 @@ if (isset($_POST['name']) && isset($_POST['price'])) {
     $price = sanitizeMySQL($conn, $_POST['price']);
     $phone = sanitizeMySQL($conn, $_POST['phone']);
 
-    // create a PHP timestamp
-    //date_default_timezone_set('America/New_York');
-    //$date = date('m-d-Y', time());
-
     $query = "INSERT INTO restaurants (name, location, genre, price, phone)
     VALUES (?, ?, ?, ?, ?)";
 

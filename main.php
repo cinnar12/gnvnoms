@@ -15,8 +15,10 @@
 </head>
 
 <body>
+	<div id="title">
   <h1>GNV Noms<br>Database</h1>
   <h3 id="about">Restaurants in Gainesville, Florida</h3>
+	</div>
   <div id="container">
     <div id="nav">
       <button id="viewtable">View Restaurants</button>

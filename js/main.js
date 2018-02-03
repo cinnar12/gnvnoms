@@ -25,7 +25,7 @@ $(document).ready(function() {
       data: $(this).serialize(),
       success: function(response) {
         $("#form").hide();
-        $("#success").show();
+        $("#success").slideDown();
       },
       error: function(xhr, status, err) {
         alert("Error! Message from server: " + xhr.status + " " + err);
@@ -33,6 +33,12 @@ $(document).ready(function() {
 
     });
 
+    resetForm();
+
   });
+
+  function resetForm() {
+    document.getElementById("restaurantform").reset();
+  };
 
 });
