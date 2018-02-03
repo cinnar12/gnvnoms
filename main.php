@@ -27,24 +27,7 @@
 
     <div id="table">
 			<h2>Restaurant Database</h2>
-			<table>
-				<tr>
-		  		<th>Name</th>
-		  		<th>Location</th>
-		  		<th>Genre</th>
-		  		<th>Price</th>
-		  		<th>Phone</th>
-		  	</tr>
-				<?php while ($row = mysqli_fetch_assoc($restaurantsgnv)) :  ?>
-				<tr>
-		  		<td><?php echo stripslashes($row['name']); ?></td>
-				  <td><?php echo $row['location']; ?></td>
-				  <td><?php echo $row['genre']; ?></td>
-				  <td><?php echo $row['price']; ?></td>
-				  <td><?php echo $row['phone']; ?></td>
-				</tr>
-				<?php endwhile;  ?>
-			</table>
+			<div id="restaurantlist"></div>
     </div>
 
     <div id="form">

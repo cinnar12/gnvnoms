@@ -3,6 +3,8 @@ $(document).ready(function() {
   $("body").hide();
   $("body").fadeIn(1000);
 
+  refreshTable();
+
   $("#viewform").click(function(){
     $("#form").slideToggle();
     $("#table").slideUp();
@@ -33,6 +35,7 @@ $(document).ready(function() {
 
     });
 
+    refreshTable();
     resetForm();
 
   });
@@ -40,5 +43,17 @@ $(document).ready(function() {
   function resetForm() {
     document.getElementById("restaurantform").reset();
   };
+
+  function refreshTable() {
+    var dataString = 'refresh=1';
+    $.ajax({
+      type: "POST",
+      url: "refresh.php",
+      data: dataString,
+      success: function(html) {
+        $("#restaurantlist").html(html);
+      } // end success
+    }); // end ajax
+  } // end refresh function
 
 });
